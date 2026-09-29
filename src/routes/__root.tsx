@@ -165,6 +165,7 @@ const resourceLinks = [
   { to: "/faqs", labelKey: "nav.faqs" },
   { to: "/community-court-and-laws", labelKey: "nav.communityCourt" },
   { to: "/newsletter", labelKey: "nav.newsletter" },
+  { to: "/gallery", labelKey: "nav.gallery" },
 ] as const;
 
 /** Generic reusable dropdown for header nav menus (About Us, Programs, Resources). */
