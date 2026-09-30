@@ -108,36 +108,6 @@ const photos: {
     },
   },
   {
-    id: "contact-hero",
-    src: contactImg,
-    category: "community",
-    w: 1920,
-    h: 1080,
-    alt: {
-      en: "Community elders in traditional dress standing outside a homestead",
-      zu: "Abadala bomphakathi begqoke izingubo zendabuko bemi phandle kwekhaya",
-    },
-    caption: {
-      en: "Community elders at the homestead",
-      zu: "Abadala bomphakathi ekhaya",
-    },
-  },
-  {
-    id: "water-project",
-    src: waterImg,
-    category: "development",
-    w: 1024,
-    h: 1024,
-    alt: {
-      en: "A man drawing clean water from a hand pump while neighbours look on",
-      zu: "Indoda ikha amanzi ahlanzekile empompini ngenkathi omakhelwane bebuka",
-    },
-    caption: {
-      en: "Clean water at the community pump",
-      zu: "Amanzi ahlanzekile empompini yomphakathi",
-    },
-  },
-  {
     id: "zulu-water-project",
     src: waterTankImg,
     category: "development",
