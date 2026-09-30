@@ -9,6 +9,7 @@ import danceImg from "@/assets/zulu-dance.jpg";
 import leadershipImg from "@/assets/zulu-leadership.png";
 import contactImg from "@/assets/contact-hero.jpg";
 import waterImg from "@/assets/water-project.jpg";
+import councilImg from "@/assets/council.jpg";
 import waterTankImg from "@/assets/zulu-water-project.jpg";
 
 export const Route = createFileRoute("/gallery")({
@@ -149,6 +150,21 @@ const photos: {
     caption: {
       en: "A new water tank and tap stand",
       zu: "Ithangi lamanzi elisha nesikhala samanzi",
+    },
+  },
+    {
+    id: "council",
+    src: councilImg,
+    category: "community",
+    w: 1280,
+    h: 720,
+    alt: {
+      en: "Members of the council standing together in front of a brick building with a red roof",
+      zu: "Amalungu ebhodi ame ndawonye phambi kwesakhiwo sezitini esinophahla obubomvu",
+    },
+    caption: {
+      en: "The Zondi Tribal Council",
+      zu: "IBhodi Lesigodi SakwaZondi",
     },
   },
 ];
