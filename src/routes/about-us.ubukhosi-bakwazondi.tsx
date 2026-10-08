@@ -42,6 +42,13 @@ const content = {
     chiefName: "👑 Honourable Chief Zondi",
     chiefRole: "Leader, Zondi Tribal Authority · Ward 2, Nkandla",
     contactCta: "Contact the Chief",
+        vmTitle: "Vision and Mission",
+    visionLabel: "Vision",
+    vision:
+      "To build a resilient, safe, and self-reliant Zondi community rooted in cultural values, powered by sustainable infrastructure, and driven by an empowered youth and community, while functioning as a recognised and capable traditional council within South Africa's constitutional framework.",
+    missionLabel: "Mission",
+    mission:
+      "To uplift the people of iSizwe sakwa Zondi by establishing robust local governance consistent with the Traditional and Khoi-San Leadership Act (Act 3 of 2019), implementing green energy and modern security solutions, providing accessible education, and fostering sustainable economic opportunities that prioritise youth and women, particularly through agricultural enterprises and digital skills development.",
     rolesTitle: "Roles of ubukhosi",
     roles: [
       "Customary law and dispute resolution",
@@ -65,6 +72,13 @@ const content = {
     chiefName: "👑 INkosi Ehloniphekile uZondi",
     chiefRole: "Umholi, Isigungu Sendabuko SakwaZondi · Iwadi 2, eNkandla",
     contactCta: "Xhumana neNkosi",
+        vmTitle: "Umbono Nenhloso",
+    visionLabel: "Umbono",
+    vision:
+      "Ukwakha umphakathi wakwaZondi onokuzimela, ophephile futhi onamandla, osekelwe emagugwini esiko, oqhutshwa yingqalasizinda esimeme, futhi oholwa yintsha nomphakathi onikwe amandla, kuyilapho usebenza njengesigungu sendabuko esivunyiwe nesinekhono ngaphansi komthethosisekelo waseNingizimu Afrika.",
+    missionLabel: "Inhloso",
+    mission:
+      "Ukuvusa abantu besizwe sakwaZondi ngokusungula ukubusa kwasendaweni okuqinile okuhambisana noMthetho Wobuholi Bendabuko NobamaKhoi-San (Umthetho wesi-3 ka-2019), ukusebenzisa amandla aluhlaza nezixazululo zesimanje zokuphepha, ukuhlinzeka ngemfundo engafinyeleleka kalula, nokukhuthaza amathuba emnotho aqhubekayo ahlomulisa intsha nabesifazane, ikakhulukazi ngezimboni zezolimo nokuthuthukiswa kwamakhono edijithali.",
     rolesTitle: "Izindima zobukhosi",
     roles: [
       "Umthetho wesiko nokuxazululwa kwezingxabano",
