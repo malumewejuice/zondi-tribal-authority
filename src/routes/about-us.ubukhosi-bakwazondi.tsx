@@ -137,6 +137,27 @@ function UbukhosiPage() {
           </div>
         </aside>
       </div>
+         <section className="mt-16">
+        <h2 className="font-display text-2xl md:text-3xl">{c.vmTitle}</h2>
+        <div className="mt-6 grid gap-6 md:grid-cols-2">
+          <div className="rounded-sm border-2 border-[color:var(--gold)] bg-card p-6 md:p-8">
+            <div className="text-xs font-semibold uppercase tracking-widest text-[color:var(--gold)]">
+              {c.visionLabel}
+            </div>
+            <p className="mt-3 font-display text-lg italic leading-relaxed text-[color:var(--royal)]">
+              {c.vision}
+            </p>
+          </div>
+          <div className="rounded-sm border bg-card p-6 md:p-8">
+            <div className="text-xs font-semibold uppercase tracking-widest text-[color:var(--gold)]">
+              {c.missionLabel}
+            </div>
+            <p className="mt-3 text-sm leading-relaxed text-muted-foreground md:text-base">
+              {c.mission}
+            </p>
+          </div>
+        </div>
+      </section>
     </main>
   );
 }
