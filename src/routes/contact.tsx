@@ -1,14 +1,21 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
-import { ArrowLeft, Phone, Mail, MessageSquare, MessageCircle } from "lucide-react";
+import { ArrowLeft, Phone, Mail, Send } from "lucide-react";
 import { useState } from "react";
+import { z } from "zod";
 
 import contactHero from "@/assets/contact-hero.jpg";
-import { useLanguage, useT } from "@/lib/i18n";
+import { useT } from "@/lib/i18n";
 
 const PHONE = "076 191 2947";
 const EMAIL = "phillyzondi@icloud.com";
-const PHONE_DIGITS = PHONE.replace(/\s/g, ""); // 0761912947
-const PHONE_INTL = "27" + PHONE_DIGITS.slice(1); // 27761912947
+
+const contactSchema = z.object({
+  name: z.string().trim().min(1).max(100),
+  email: z.string().trim().email().max(255),
+  subject: z.string().trim().min(1).max(150),
+  message: z.string().trim().min(1).max(1000),
+});
+
 
 export const Route = createFileRoute("/contact")({
   head: () => ({
@@ -32,83 +39,31 @@ export const Route = createFileRoute("/contact")({
   component: ContactPage,
 });
 
-const content = {
-  en: {
-    textTitle: "Text the Council",
-    textIntro:
-      "Write your message below, then choose how to send it. This opens your own SMS, WhatsApp or email app with the message ready to send.",
-    name: "Your name",
-    area: "Village / area (optional)",
-    message: "Your message",
-    needMessage: "Please write your message first.",
-    sms: "Send SMS",
-    whatsapp: "WhatsApp",
-    mail: "Email",
-    greeting: "Hello, I am",
-    from: "from",
-    note: "Your message is sent from your own phone or email. It is not stored on this website.",
-    emergency:
-      "In an emergency, call the police on 10111 (or 112 from a cellphone) or go to your nearest clinic or hospital.",
-    subject: "Message to the Zondi Tribal Council",
-  },
-  zu: {
-    textTitle: "Thumelela iBandla umbhalo",
-    textIntro:
-      "Bhala umyalezo wakho ngezansi, bese ukhetha ukuthi uzowuthumela kanjani. Lokhu kuvula uhlelo lwakho lwe-SMS, i-WhatsApp noma i-imeyili nomyalezo usulungile ukuthunyelwa.",
-    name: "Igama lakho",
-    area: "Idolobhana / indawo (akuphoqelekile)",
-    message: "Umyalezo wakho",
-    needMessage: "Sicela uqale ubhale umyalezo wakho.",
-    sms: "Thumela i-SMS",
-    whatsapp: "WhatsApp",
-    mail: "Imeyili",
-    greeting: "Sawubona, ngingu",
-    from: "ovela e",
-    note: "Umyalezo wakho uthunyelwa kusuka kufoni noma kuhlelo lwakho lwe-imeyili. Awugcinwa kuleli webhusayithi.",
-    emergency:
-      "Esimeni esiphuthumayo, shayela amaphoyisa ku-10111 (noma ku-112 ngomakhalekhukhwini) noma uye emtholampilo noma esibhedlela esiseduze.",
-    subject: "Umyalezo oya eSigungwini Sendabuko SakwaZondi",
-  },
-} as const;
-
 function ContactPage() {
   const t = useT();
-  const { lang } = useLanguage();
-  const c = content[lang];
+  const [values, setValues] = useState({ name: "", email: "", subject: "", message: "" });
+  const [error, setError] = useState<string | null>(null);
+  const [sent, setSent] = useState(false);
 
-  const [name, setName] = useState("");
-  const [area, setArea] = useState("");
-  const [message, setMessage] = useState("");
-  const [error, setError] = useState(false);
+  const onSubmit = (e: React.FormEvent) => {
+    e.preventDefault();
+    const parsed = contactSchema.safeParse(values);
+    if (!parsed.success) {
+      setError(t("contact.form.error"));
+      setSent(false);
+      return;
+    }
+    setError(null);
+    setSent(true);
+    setValues({ name: "", email: "", subject: "", message: "" });
+  };
 
   const field =
     "mt-2 w-full rounded-sm border border-border bg-background px-4 py-3 text-sm text-foreground outline-none transition focus:border-[color:var(--gold)]";
   const label = "text-xs font-semibold uppercase tracking-widest text-muted-foreground";
-  const sendBtn =
-    "inline-flex items-center gap-2 rounded-full px-6 py-3 text-xs font-semibold uppercase tracking-widest transition hover:brightness-110";
-
-  function buildText() {
-    const intro = name.trim()
-      ? `${c.greeting} ${name.trim()}${area.trim() ? ` ${c.from} ${area.trim()}` : ""}.`
-      : "";
-    return [intro, message.trim()].filter(Boolean).join("\n\n");
-  }
-
-  function send(kind: "sms" | "whatsapp" | "mail") {
-    if (!message.trim()) {
-      setError(true);
-      return;
-    }
-    setError(false);
-    const text = encodeURIComponent(buildText());
-    let url: string;
-    if (kind === "sms") url = `sms:${PHONE_DIGITS}?&body=${text}`;
-    else if (kind === "whatsapp") url = `https://wa.me/${PHONE_INTL}?text=${text}`;
-    else url = `mailto:${EMAIL}?subject=${encodeURIComponent(c.subject)}&body=${text}`;
-    window.location.href = url;
-  }
 
   return (
+
     <div className="min-h-screen bg-background text-foreground">
       <section className="relative isolate overflow-hidden">
         <img
@@ -148,7 +103,7 @@ function ContactPage() {
 
               <div className="mt-6 grid gap-6 sm:grid-cols-2">
                 <a
-                  href={`tel:${PHONE_DIGITS}`}
+                  href={`tel:${PHONE.replace(/\s/g, "")}`}
                   className="group flex flex-col items-center rounded-sm border border-border bg-background p-6 transition hover:border-[color:var(--gold)]"
                 >
                   <span className="text-2xl">📞</span>
@@ -176,7 +131,7 @@ function ContactPage() {
 
               <div className="mt-8 flex flex-wrap justify-center gap-3">
                 <a
-                  href={`tel:${PHONE_DIGITS}`}
+                  href={`tel:${PHONE.replace(/\s/g, "")}`}
                   className="inline-flex items-center gap-2 rounded-full bg-[color:var(--royal)] px-6 py-3 text-xs font-semibold uppercase tracking-widest text-background transition hover:brightness-110"
                 >
                   <Phone className="h-4 w-4" />
@@ -192,94 +147,87 @@ function ContactPage() {
               </div>
             </div>
 
-            <div className="mt-10 border-t pt-8">
+            <form onSubmit={onSubmit} className="mt-10 border-t pt-8">
               <div className="text-center text-xs font-semibold uppercase tracking-widest text-[color:var(--gold)]">
-                {c.textTitle}
+                {t("contact.form.title")}
               </div>
-              <p className="mt-4 text-center text-sm text-muted-foreground">{c.textIntro}</p>
 
               <div className="mt-6 grid gap-5 sm:grid-cols-2">
                 <div>
-                  <label className={label} htmlFor="tc-name">
-                    {c.name}
+                  <label className={label} htmlFor="cf-name">
+                    {t("contact.form.name")}
                   </label>
                   <input
-                    id="tc-name"
+                    id="cf-name"
                     className={field}
                     maxLength={100}
-                    value={name}
-                    onChange={(e) => setName(e.target.value)}
+                    value={values.name}
+                    onChange={(e) => setValues((v) => ({ ...v, name: e.target.value }))}
                   />
                 </div>
                 <div>
-                  <label className={label} htmlFor="tc-area">
-                    {c.area}
+                  <label className={label} htmlFor="cf-email">
+                    {t("contact.form.email")}
                   </label>
                   <input
-                    id="tc-area"
+                    id="cf-email"
+                    type="email"
                     className={field}
-                    maxLength={100}
-                    value={area}
-                    onChange={(e) => setArea(e.target.value)}
+                    maxLength={255}
+                    value={values.email}
+                    onChange={(e) => setValues((v) => ({ ...v, email: e.target.value }))}
                   />
                 </div>
                 <div className="sm:col-span-2">
-                  <label className={label} htmlFor="tc-message">
-                    {c.message}
+                  <label className={label} htmlFor="cf-subject">
+                    {t("contact.form.subject")}
+                  </label>
+                  <input
+                    id="cf-subject"
+                    className={field}
+                    maxLength={150}
+                    value={values.subject}
+                    onChange={(e) => setValues((v) => ({ ...v, subject: e.target.value }))}
+                  />
+                </div>
+                <div className="sm:col-span-2">
+                  <label className={label} htmlFor="cf-message">
+                    {t("contact.form.message")}
                   </label>
                   <textarea
-                    id="tc-message"
+                    id="cf-message"
                     rows={5}
                     className={field}
-                    maxLength={600}
-                    value={message}
-                    onChange={(e) => {
-                      setMessage(e.target.value);
-                      if (error) setError(false);
-                    }}
+                    maxLength={1000}
+                    value={values.message}
+                    onChange={(e) => setValues((v) => ({ ...v, message: e.target.value }))}
                   />
                 </div>
               </div>
 
               {error && (
-                <p role="alert" className="mt-4 text-center text-sm text-[color:var(--royal)]">
-                  {c.needMessage}
+                <p className="mt-4 text-center text-sm text-[color:var(--royal)]">{error}</p>
+              )}
+              {sent && (
+                <p className="mt-4 rounded-sm border border-[color:var(--gold)] bg-background p-4 text-center text-sm text-foreground">
+                  {t("contact.form.success")}
                 </p>
               )}
 
-              <div className="mt-6 flex flex-wrap justify-center gap-3">
+              <div className="mt-6 flex justify-center">
                 <button
-                  type="button"
-                  onClick={() => send("sms")}
-                  className={`${sendBtn} bg-[color:var(--royal)] text-background`}
+                  type="submit"
+                  className="inline-flex items-center gap-2 rounded-full bg-[color:var(--royal)] px-6 py-3 text-xs font-semibold uppercase tracking-widest text-background transition hover:brightness-110"
                 >
-                  <MessageSquare className="h-4 w-4" />
-                  {c.sms}
-                </button>
-                <button
-                  type="button"
-                  onClick={() => send("whatsapp")}
-                  className={`${sendBtn} bg-[color:var(--forest)] text-background`}
-                >
-                  <MessageCircle className="h-4 w-4" />
-                  {c.whatsapp}
-                </button>
-                <button
-                  type="button"
-                  onClick={() => send("mail")}
-                  className={`${sendBtn} border border-foreground/20 text-foreground hover:border-[color:var(--gold)]`}
-                >
-                  <Mail className="h-4 w-4" />
-                  {c.mail}
+                  <Send className="h-4 w-4" />
+                  {t("contact.form.send")}
                 </button>
               </div>
-
-              <p className="mt-5 text-center text-xs text-muted-foreground">{c.note}</p>
-              <p className="mt-3 text-center text-xs text-muted-foreground">{c.emergency}</p>
-            </div>
+            </form>
           </div>
         </div>
       </section>
     </div>
   );
+
 }
