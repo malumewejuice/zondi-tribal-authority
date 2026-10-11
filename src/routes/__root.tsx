@@ -154,11 +154,13 @@ const aboutLinks = [
 ] as const;
 
 const programLinks = [
-  { to: "/programs/youth-development", labelKey: "nav.youthDevelopment" },
+  { to: "/programs/communication", labelKey: "nav.communication" },
+  { to: "/programs/economic-development", labelKey: "nav.economicDevelopment" },
   { to: "/programs/social-development", labelKey: "nav.socialDevelopment" },
   { to: "/programs/safety-security", labelKey: "nav.safetySecurity" },
+  { to: "/programs/women-empowerment", labelKey: "nav.womenEmpowerment" },
   { to: "/programs/agriculture", labelKey: "nav.agriculture" },
-  { to: "/programs/electricity-water", labelKey: "nav.electricityWater" },
+  { to: "/programs/youth-development", labelKey: "nav.youthDevelopment" },
 ] as const;
 
 const resourceLinks = [
