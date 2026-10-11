@@ -36,12 +36,12 @@ const en: Dict = {
 
   // hero
   "hero.eyebrow": "Isizwe SamaZulu · KwaZulu-Natal",
-    "hero.title.1": "The Official Digital Home of",
-   "hero.title.2": "iSizwe sakwa Zondi",
-   "hero.lede":
-     "Rooted in heritage, guided by traditional leadership and working together for a safe, empowered and self-reliant community.",  "hero.cta.primary": "Explore our story",tunity for every household."
-  "hero.cta.secondary": "See what we're building",
-  "hero.stat.1.n": "7",
+   "hero.title.1": "The Official Digital Home of",
+  "hero.title.2": "iSizwe sakwa Zondi",
+  "hero.lede":
+    "Rooted in heritage, guided by traditional leadership and working together for a safe, empowered and self-reliant community.",
+  "hero.cta.primary": "Explore our story",
+  "hero.cta.secondary": "See what we're building",  "hero.stat.1.n": "7",
   "hero.stat.1.l": "Pillars for Development",
   "hero.stat.2.n": "2",
   "hero.stat.2.l": "Languages: English and isiZulu",
