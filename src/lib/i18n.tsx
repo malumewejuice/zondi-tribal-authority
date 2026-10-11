@@ -8,7 +8,7 @@ const en: Dict = {
   // header / nav
   "nav.heritage": "Heritage",
   "nav.governance": "Governance",
-  "nav.development": "Programs",
+  "nav.development": "Pillars for Development",
   "nav.culture": "Culture",
   "nav.facts": "Nkandla Today",
   "nav.contact": "Contact",
@@ -16,6 +16,9 @@ const en: Dict = {
   "nav.resources": "Resources",
   "nav.ubukhosi": "Ubukhosi bakwaZondi",
   "nav.supportStructure": "Support Structure",
+  "nav.communication": "Communication",
+  "nav.economicDevelopment": "Economic Development",
+  "nav.womenEmpowerment": "Women Empowerment",
   "nav.youthDevelopment": "Youth Development",
   "nav.socialDevelopment": "Social Development",
   "nav.safetySecurity": "Safety and Security",
@@ -33,11 +36,10 @@ const en: Dict = {
 
   // hero
   "hero.eyebrow": "Isizwe SamaZulu · KwaZulu-Natal",
-  "hero.title.1": "The cradle of Zulu history,",
-  "hero.title.2": "rising anew.",
-  "hero.lede":
-    "Where King Shaka's warriors walked the hills to exhaustion, where the graves of kings rest beneath ancient forests — and where a modern municipality is building water, roads and opportunity for every household.",
-  "hero.cta.primary": "Explore our story",
+    "hero.title.1": "The Official Digital Home of",
+   "hero.title.2": "iSizwe sakwa Zondi",
+   "hero.lede":
+     "Rooted in heritage, guided by traditional leadership and working together for a safe, empowered and self-reliant community.",  "hero.cta.primary": "Explore our story",tunity for every household."
   "hero.cta.secondary": "See what we're building",
   "hero.stat.1.n": "7",
   "hero.stat.1.l": "Pillars for Development",
@@ -282,7 +284,7 @@ const en: Dict = {
 const zu: Dict = {
   "nav.heritage": "Amagugu",
   "nav.governance": "Ukubusa",
-  "nav.development": "Izinhlelo",
+  "nav.development": "Izinsika Zentuthuko",
   "nav.culture": "Amasiko",
   "nav.facts": "INkandla Namuhla",
   "nav.contact": "Xhumana",
@@ -290,6 +292,9 @@ const zu: Dict = {
   "nav.resources": "Izinsiza",
   "nav.ubukhosi": "Ubukhosi bakwaZondi",
   "nav.supportStructure": "Isakhiwo Sokusekelwa",
+  "nav.communication": "Ukuxhumana",
+  "nav.economicDevelopment": "Ukuthuthukiswa Komnotho",
+  "nav.womenEmpowerment": "Ukunikwa Amandla Kwabesifazane",
   "nav.youthDevelopment": "Ukuthuthukiswa Kwentsha",
   "nav.socialDevelopment": "Ukuthuthukiswa Komphakathi",
   "nav.safetySecurity": "Ukuphepha Nezokuvikela",
@@ -297,7 +302,7 @@ const zu: Dict = {
   "nav.electricityWater": "Ugesi Namanzi",
   "nav.faqs": "Imibuzo Ejwayelekile",
   "nav.communityCourt": "Inkantolo Yomphakathi Nemithetho",
-  "nav.gallery": "Gallery",
+  "nav.gallery": "Izithombe",
   "nav.newsletter": "Incwadi Yezindaba Nezibuyekezo",
   "notfound.title": "Ikhasi Alitholakali",
   "notfound.body": "Ikhasi olifunayo alikho noma lisusiwe.",
@@ -306,11 +311,10 @@ const zu: Dict = {
   "brand.sub": "Igunya Lesizwe SakwaZondi",
 
   "hero.eyebrow": "Isizwe SamaZulu · KwaZulu-Natali",
-  "hero.title.1": "Umsuka womlando wamaZulu,",
-  "hero.title.2": "uvuka kabusha.",
-  "hero.lede":
-    "Lapho amabutho eNkosi uShaka ahamba khona ezintabeni aze akhandleka, lapho amathuna amakhosi aphumula khona ngaphansi kwamahlathi akudala — futhi lapho uMasipala wanamuhla akha khona amanzi, imigwaqo namathuba emakhaya wonke.",
-  "hero.cta.primary": "Hlola indaba yethu",
+    "hero.title.1": "Ikhaya Elisemthethweni Le-inthanethi Lesizwe",
+   "hero.title.2": "sakwaZondi",
+   "hero.lede":
+     "Sigxile emagugwini, siholwa ubuholi bendabuko, futhi sisebenza ndawonye ukuze sibe umphakathi ophephile, onamandla futhi ozimele.",  "hero.cta.primary": "Hlola indaba yethu",
   "hero.cta.secondary": "Bheka esikwakhayo",
   "hero.stat.1.n": "7",
   "hero.stat.1.l": "Izinsika Zentuthuko",
