@@ -4,6 +4,8 @@ import danceImg from "@/assets/zulu-dance.jpg";
 import heritageImg from "@/assets/heritage-site.jpg";
 import leadershipImg from "@/assets/zulu-leadership.png";
 import { useT } from "@/lib/i18n";
+import { HomeSections } from "@/components/HomeSections";
+
 
 export const Route = createFileRoute("/")({
   component: Index,
@@ -18,6 +20,7 @@ function Index() {
   return (
     <div className="min-h-screen bg-background text-foreground">
       <Hero />
+      <HomeSections />
       <Heritage />
       
       <Zondi />
