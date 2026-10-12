@@ -154,6 +154,7 @@ const aboutLinks = [
   { to: "/about-us/heritage", labelKey: "nav.heritage" },
   { to: "/about-us/ubukhosi-bakwazondi", labelKey: "nav.ubukhosi" },
   { to: "/about-us/support-structure", labelKey: "nav.supportStructure" },
+  { to: "/leadership", labelKey: "nav.leadership" },
 ] as const;
 
 const programLinks = [
@@ -167,6 +168,8 @@ const programLinks = [
 ] as const;
 
 const resourceLinks = [
+  { to: "/announcements", labelKey: "nav.announcements" },
+  { to: "/documents", labelKey: "nav.documents" },
   { to: "/faqs", labelKey: "nav.faqs" },
   { to: "/community-court-and-laws", labelKey: "nav.communityCourt" },
   { to: "/newsletter", labelKey: "nav.newsletter" },
