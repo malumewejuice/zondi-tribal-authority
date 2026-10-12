@@ -219,11 +219,10 @@ const en: Dict = {
   "foot.email": "Email",
   "foot.chief": "Honourable Chief Zondi",
   "foot.chief.cta": "Contact the Chief",
-  "foot.addr.1": "Nkandla Local Municipality",
-  "foot.addr.2": "King Cetshwayo District, KwaZulu-Natal",
+  "foot.addr.1": "Zondi Tribal Authority",
+  "foot.addr.2": "Ward 2, Nkandla · King Cetshwayo District, KwaZulu-Natal",
   "foot.addr.3": "South Africa",
-  "foot.copy": "© {year} Nkandla Local Municipality. In service of the people of the Zulu Kingdom.",
-
+  "foot.copy": "© {year} Zondi Tribal Authority. In service of the people of iSizwe sakwa Zondi.",
   // language switch
   "lang.label": "Language",
   "lang.en": "English",
@@ -485,11 +484,11 @@ const zu: Dict = {
   "foot.email": "Imeyili",
   "foot.chief": "uSihlalo uZondi",
   "foot.chief.cta": "Xhumana noSihlalo",
-  "foot.addr.1": "UMasipala Wasekhaya waseNkandla",
-  "foot.addr.2": "Isifunda saseKing Cetshwayo, KwaZulu-Natali",
+  "foot.addr.1": "Isigungu Sendabuko SakwaZondi",
+  "foot.addr.2": "Iwadi 2, eNkandla · Isifunda saseKing Cetshwayo, KwaZulu-Natali",
   "foot.addr.3": "iNingizimu Afrika",
-  "foot.copy": "© {year} UMasipala Wasekhaya waseNkandla. Sisebenzela abantu boMbuso wamaZulu.",
-
+  "foot.copy": "© {year} Isigungu Sendabuko SakwaZondi. Sisebenzela abantu besizwe sakwaZondi.",
+  
   "lang.label": "Ulimi",
   "lang.en": "IsiNgisi",
   "lang.zu": "isiZulu",
