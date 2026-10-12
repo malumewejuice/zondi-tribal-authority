@@ -79,26 +79,29 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "Nkandla Local Municipality — Cradle of Zulu History" },
+          { title: "Zondi Tribal Authority — iSizwe sakwa Zondi, Nkandla" },
       {
         name: "description",
         content:
-          "Official home of Nkandla: cradle of Zulu history, home to King Cetshwayo, and a community building a brighter future through water, roads and skills.",
+          "The official website of the Zondi Tribal Authority (iSizwe sakwa Zondi): traditional leadership, heritage and community development in Ward 2, Nkandla.",
       },
-      { name: "author", content: "Nkandla Local Municipality" },
-      { property: "og:title", content: "Nkandla Local Municipality — Cradle of Zulu History" },
+      { name: "author", content: "Zondi Tribal Authority" },
+      { property: "og:title", content: "Zondi Tribal Authority — iSizwe sakwa Zondi, Nkandla" },
       {
         property: "og:description",
         content:
-          "Official home of Nkandla: cradle of Zulu history, home to King Cetshwayo, and a community building a brighter future through water, roads and skills.",
+          "The official website of the Zondi Tribal Authority (iSizwe sakwa Zondi): traditional leadership, heritage and community development in Ward 2, Nkandla.",
       },
       { property: "og:type", content: "website" },
+      { property: "og:image", content: "https://zonditribalauthority.co.za/og-image.jpg" },
       { name: "twitter:card", content: "summary_large_image" },
-      { name: "twitter:title", content: "Nkandla Local Municipality — Cradle of Zulu History" },
-      { name: "twitter:description", content: "Official home of Nkandla: cradle of Zulu history, home to King Cetshwayo, and a community building a brighter future through water, roads and skills." },
-      { property: "og:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/22b3240d-000d-4e19-a629-bf9174162a4d/id-preview-008ef2f2--acbba08c-78fc-4d58-b1c0-2bd783867c10.lovable.app-1785226407718.png" },
-      { name: "twitter:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/22b3240d-000d-4e19-a629-bf9174162a4d/id-preview-008ef2f2--acbba08c-78fc-4d58-b1c0-2bd783867c10.lovable.app-1785226407718.png" },
-    ],
+      { name: "twitter:title", content: "Zondi Tribal Authority — iSizwe sakwa Zondi, Nkandla" },
+      {
+        name: "twitter:description",
+        content:
+          "The official website of the Zondi Tribal Authority (iSizwe sakwa Zondi): traditional leadership, heritage and community development in Ward 2, Nkandla.",
+      },
+      { name: "twitter:image", content: "https://zonditribalauthority.co.za/og-image.jpg" },    ],
     links: [
       { rel: "stylesheet", href: appCss },
       { rel: "preconnect", href: "https://fonts.googleapis.com" },
