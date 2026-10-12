@@ -1,6 +1,7 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { useState } from "react";
 import { useLanguage } from "@/lib/i18n";
+import { announcements, type Category } from "@/lib/announcements";
 
 export const Route = createFileRoute("/announcements")({
   head: () => ({
@@ -16,31 +17,6 @@ export const Route = createFileRoute("/announcements")({
   component: AnnouncementsPage,
 });
 
-type Category = "notices" | "events" | "programmes" | "safety" | "opportunities";
-
-type Announcement = {
-  id: string;
-  category: Category;
-  date: string; // YYYY-MM-DD
-  closed?: boolean; // set true once the notice is no longer current
-  title: { en: string; zu: string };
-  body: { en: string; zu: string };
-};
-
-/**
- * HOW TO ADD AN ANNOUNCEMENT
- * Copy the example below into the list, remove the leading "//", and edit it.
- * Newest announcements are shown first. Set `closed: true` once a notice has expired.
- *
- *  {
- *    id: "imbizo-2026-q4",
- *    category: "events",
- *    date: "2026-10-20",
- *    title: { en: "Community imbizo", zu: "Imbizo yomphakathi" },
- *    body: { en: "Details here.", zu: "Imininingwane lapha." },
- *  },
- */
-const announcements: Announcement[] = [];
 
 const content = {
   en: {
