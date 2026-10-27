@@ -23,4 +23,15 @@ export type Announcement = {
  *    body: { en: "Details here.", zu: "Imininingwane lapha." },
  *  },
  */
-export const announcements: Announcement[] = [];
+export const announcements: Announcement[] = [
+  {
+    id: "imbizo-2026-q4",
+    category: "events",
+    date: "2026-12-28",
+    title: { en: "Community imbizo", zu: "Imbizo yomphakathi" },
+    body: {
+      en: "",
+      zu: "",
+    },
+  },
+];
