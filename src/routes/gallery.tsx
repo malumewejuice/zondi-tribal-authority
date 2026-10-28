@@ -63,6 +63,21 @@ const photos: {
       zu: "Esikhumbuzweni seNkosi uCetshwayo",
     },
   },
+       {
+       id: "imbizo-2026",
+       src: imbizoImg,
+       category: "community",
+       w: 1600,
+       h: 1067,
+       alt: {
+         en: "Describe what the photo shows",
+         zu: "Chaza ukuthi isithombe sibonisani",
+       },
+       caption: {
+         en: "Short caption",
+         zu: "Isihloko esifushane",
+       },
+     },
   {
     id: "nkandla-hills",
     src: hillsImg,
