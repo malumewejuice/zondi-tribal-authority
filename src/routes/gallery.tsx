@@ -64,7 +64,7 @@ const photos: {
     },
   },
        {
-       id: "imbizo-2026",
+       id: "imbizo-2025",
        src: imbizoImg,
        category: "community",
        w: 1600,
