@@ -4,6 +4,7 @@ import { ChevronLeft, ChevronRight, X } from "lucide-react";
 import { useLanguage } from "@/lib/i18n";
 
 import heritageImg from "@/assets/heritage-site.jpg";
+import imbizoImg from "@/assets/imbizo-2026.jpg";
 import hillsImg from "@/assets/nkandla-hills.jpg";
 import danceImg from "@/assets/zulu-dance.jpg";
 import leadershipImg from "@/assets/zulu-leadership.png";
