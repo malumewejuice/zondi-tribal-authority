@@ -68,7 +68,7 @@ const photos: {
   },
      {
        id: "zondi-imbizo-heritage-day-2026-elders-seated-traditional-beadwork.jpg",
-       src: Heritage1,
+       src: heritagedayImg,
        category: "community",
        w: 1600,
        h: 1067,
@@ -83,7 +83,7 @@ const photos: {
      },
    {
        id: "zondi-imbizo-heritage-day-2025-elders-and-guests-at-table.jpg",
-       src: Heritage2,
+       src: heritageday2Img,
        category: "community",
        w: 1600,
        h: 1067,
@@ -98,7 +98,7 @@ const photos: {
      },
    {
        id: "zondi-imbizo-heritage-day-2025-young-women-carrying-gifts-procession.jpg",
-       src: Heritage3,
+       src: heritageday3Img,
        category: "community",
        w: 1600,
        h: 1067,
