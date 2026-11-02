@@ -66,66 +66,66 @@ const photos: {
       zu: "Esikhumbuzweni seNkosi uCetshwayo",
     },
   },
-     {
-       id: "zondi-imbizo-heritage-day-2026-elders-seated-traditional-beadwork.jpg",
-       src: heritage1Img,
-       category: "community",
-       w: 1600,
-       h: 1067,
-       alt: {
-         en: "Describe what the photo shows",
-         zu: "Chaza ukuthi isithombe sibonisani",
-       },
-       caption: {
-         en: "Our elders, dressed in beautiful beadwork, at the Heritage Day",
-         zu: "Abadala bethu, begqoke ubuhlalu obuhle, ku-imbizo yoSuku Lwamagugu.",
-       },
-     },
-   {
-       id: "zondi-imbizo-heritage-day-2025-elders-and-guests-at-table.jpg",
-       src: heritageday2Img,
-       category: "community",
-       w: 1600,
-       h: 1067,
-       alt: {
-         en: "Describe what the photo shows",
-         zu: "Chaza ukuthi isithombe sibonisani",
-       },
-       caption: {
-         en: "Sharing a meal in the spirit of ubuntu.",
-         zu: "Sidla sabelane ngomoya wobuntu..",
-       },
-     },
-   {
-       id: "zondi-imbizo-heritage-day-2025-young-women-carrying-gifts-procession.jpg",
-       src: heritageday3Img,
-       category: "community",
-       w: 1600,
-       h: 1067,
-       alt: {
-         en: "Describe what the photo shows",
-         zu: "Chaza ukuthi isithombe sibonisani",
-       },
-       caption: {
-         en: "Honouring our customs with pride",
-         zu: "Siwahlonipha amasiko ethu ngokuziqhenya.",
-       },
-     },
-       {
-       id: "imbizo-2025",
-       src: imbizoImg,
-       category: "community",
-       w: 1600,
-       h: 1067,
-       alt: {
-         en: "Describe what the photo shows",
-         zu: "Chaza ukuthi isithombe sibonisani",
-       },
-       caption: {
-         en: "Heritage Day Imbizo 2026",
-         zu: "II-Imbizo yoSuku Lwamagugu 2026",
-       },
-     },
+      {
+    id: "imbizo-2025-elders-seated",
+    src: heritage1Img,
+    category: "community",
+    w: 1600,
+    h: 1067,
+    alt: {
+      en: "Two elderly women in traditional beaded headwear and colourful beaded necklaces seated at the Heritage Day imbizo",
+      zu: "Abesifazane abadala begqoke izigqoko zobuhlalu nezifociso zobuhlalu ezinemibala behleli ku-imbizo yoSuku Lwamagugu",
+    },
+    caption: {
+      en: "Our elders, dressed in beautiful beadwork, at the Heritage Day imbizo",
+      zu: "Abadala bethu, begqoke ubuhlalu obuhle, ku-imbizo yoSuku Lwamagugu",
+    },
+  },
+  {
+    id: "imbizo-2025-table",
+    src: heritageday2Img,
+    category: "community",
+    w: 1600,
+    h: 1067,
+    alt: {
+      en: "Elders and guests in traditional and formal dress seated around a decorated table during the Heritage Day imbizo",
+      zu: "Abadala nezihambeli begqoke izingubo zendabuko nezesimanje behleli etafuleni elihlotshisiwe ku-imbizo yoSuku Lwamagugu",
+    },
+    caption: {
+      en: "Sharing a meal in the spirit of ubuntu",
+      zu: "Sidla sabelane ngomoya wobuntu",
+    },
+  },
+  {
+    id: "imbizo-2025-gifts-procession",
+    src: heritageday3Img,
+    category: "community",
+    w: 1600,
+    h: 1067,
+    alt: {
+      en: "Young women in beaded regalia carrying gifts of food and drink on their heads in a ceremonial procession",
+      zu: "Amantombazane agqoke ubuhlalu athwele izipho zokudla nokuphuza ezinhloko zawo emcimbini wendabuko",
+    },
+    caption: {
+      en: "Honouring our customs with pride",
+      zu: "Siwahlonipha amasiko ethu ngokuziqhenya",
+    },
+  },
+  {
+    id: "imbizo-2025",
+    src: imbizoImg,
+    category: "community",
+    w: 1600,
+    h: 1067,
+    alt: {
+      en: "Community members seated attentively under a marquee at the Heritage Day imbizo",
+      zu: "Abantu bomphakathi behleli ngenhlonipho ngaphansi kwetende ku-imbizo yoSuku Lwamagugu",
+    },
+    caption: {
+      en: "Heritage Day Imbizo 2025",
+      zu: "I-Imbizo yoSuku Lwamagugu 2025",
+    },
+  },
   {
     id: "nkandla-hills",
     src: hillsImg,
