@@ -5,6 +5,9 @@ import { useLanguage } from "@/lib/i18n";
 
 import heritageImg from "@/assets/heritage-site.jpg";
 import imbizoImg from "@/assets/imbizo-2025.jpg";
+import heritageday2Img from "@/assets/zondi-imbizo-heritage-day-2025-elders-and-guests-at-table.jpg";
+import heritageday3Img from "@/assets/zondi-imbizo-heritage-day-2025-young-women-carrying-gifts-procession.jpg";
+import heritagedayImg from "@/assets/zondi-imbizo-heritage-day-2026-elders-seated-traditional-beadwork.jpg";
 import hillsImg from "@/assets/nkandla-hills.jpg";
 import danceImg from "@/assets/zulu-dance.jpg";
 import leadershipImg from "@/assets/zulu-leadership.png";
@@ -63,6 +66,51 @@ const photos: {
       zu: "Esikhumbuzweni seNkosi uCetshwayo",
     },
   },
+     {
+       id: "zondi-imbizo-heritage-day-2026-elders-seated-traditional-beadwork.jpg",
+       src: Heritage1,
+       category: "community",
+       w: 1600,
+       h: 1067,
+       alt: {
+         en: "Describe what the photo shows",
+         zu: "Chaza ukuthi isithombe sibonisani",
+       },
+       caption: {
+         en: "Our elders, dressed in beautiful beadwork, at the Heritage Day",
+         zu: "Abadala bethu, begqoke ubuhlalu obuhle, ku-imbizo yoSuku Lwamagugu.",
+       },
+     },
+   {
+       id: "zondi-imbizo-heritage-day-2025-elders-and-guests-at-table.jpg",
+       src: Heritage2,
+       category: "community",
+       w: 1600,
+       h: 1067,
+       alt: {
+         en: "Describe what the photo shows",
+         zu: "Chaza ukuthi isithombe sibonisani",
+       },
+       caption: {
+         en: "Sharing a meal in the spirit of ubuntu.",
+         zu: "Sidla sabelane ngomoya wobuntu..",
+       },
+     },
+   {
+       id: "zondi-imbizo-heritage-day-2025-young-women-carrying-gifts-procession.jpg",
+       src: Heritage3,
+       category: "community",
+       w: 1600,
+       h: 1067,
+       alt: {
+         en: "Describe what the photo shows",
+         zu: "Chaza ukuthi isithombe sibonisani",
+       },
+       caption: {
+         en: "Honouring our customs with pride",
+         zu: "Siwahlonipha amasiko ethu ngokuziqhenya.",
+       },
+     },
        {
        id: "imbizo-2025",
        src: imbizoImg,
@@ -74,8 +122,8 @@ const photos: {
          zu: "Chaza ukuthi isithombe sibonisani",
        },
        caption: {
-         en: "Short caption",
-         zu: "Isihloko esifushane",
+         en: "Heritage Day Imbizo 2026",
+         zu: "II-Imbizo yoSuku Lwamagugu 2026",
        },
      },
   {
