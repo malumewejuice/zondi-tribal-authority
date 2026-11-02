@@ -73,7 +73,7 @@ const photos: {
     w: 1600,
     h: 1067,
     alt: {
-      en: "Two elderly women in traditional beaded headwear and colourful beaded necklaces seated at the Heritage Day imbizo",
+      en: "Two elderly women in traditional beaded headwear and colourful beaded necklaces seated for Heritage Day",
       zu: "Abesifazane abadala begqoke izigqoko zobuhlalu nezifociso zobuhlalu ezinemibala behleli ku-imbizo yoSuku Lwamagugu",
     },
     caption: {
