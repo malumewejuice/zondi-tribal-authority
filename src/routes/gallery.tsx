@@ -7,7 +7,7 @@ import heritageImg from "@/assets/heritage-site.jpg";
 import imbizoImg from "@/assets/imbizo-2025.jpg";
 import heritageday2Img from "@/assets/zondi-imbizo-heritage-day-2025-elders-and-guests-at-table.jpg";
 import heritageday3Img from "@/assets/zondi-imbizo-heritage-day-2025-young-women-carrying-gifts-procession.jpg";
-import heritagedayImg from "@/assets/zondi-imbizo-heritage-day-2026-elders-seated-traditional-beadwork.jpg";
+import heritage1Img from "@/assets/zondi-imbizo-heritage-day-2026-elders-seated-traditional-beadwork.jpg";
 import hillsImg from "@/assets/nkandla-hills.jpg";
 import danceImg from "@/assets/zulu-dance.jpg";
 import leadershipImg from "@/assets/zulu-leadership.png";
@@ -68,7 +68,7 @@ const photos: {
   },
      {
        id: "zondi-imbizo-heritage-day-2026-elders-seated-traditional-beadwork.jpg",
-       src: heritagedayImg,
+       src: heritage1Img,
        category: "community",
        w: 1600,
        h: 1067,
